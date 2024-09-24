@@ -1,0 +1,51 @@
+"""
+Exercício
+Peça ao usuário para digitar seu nome
+Peça ao usuário para digitar sua idade
+Se nome e idade forem digitados:
+Exiba:
+Seu nome é {nome}
+Seu nome invertido é {nome invertido}
+Seu nome contém (ou não) espaços
+Seu nome tem {n} letras
+A primeira letra do seu nome é {letra}
+A última letra do seu nome é {letra}
+Se nada for digitado em nome ou idade:
+exiba "Desculpe, você deixou campos vazios."
+"""
+
+nome = input('Digite o seu nome: ')
+Pede para o usuário digitar seu nome
+
+idade = input('Digite a sua idade: ')
+Pede para o usuário digitar sua idade
+
+contletras = len (nome)
+
+Faz a contagem das letras do nome
+contespacos = nome.count(' ')
+
+Faz a contagem de espaços do nome
+if nome and idade != '':
+# Chama o nome e a idade e diz que se for diferente de 'Nada' então...
+
+print(f'Seu nome é: {nome}')
+# Manda mostrar meu nome
+
+print(f'Seu nome invertido é: {nome[:: -1]}')
+# Inverte o nome usando o fatiamento de strings
+
+print('Seu nome tem exatos', contespacos, 'espaços!')
+# Chama a variável que eu criei para contar o número de espaços
+
+print('Seu nome tem exatas', contletras, 'letras!')
+# Chama a variável que eu criei para contar o numero de letras
+
+print(f'A primeira letra do seu nome é: {nome[ 0]}')
+# Usa o fatiamento de strings para localizar a primeira letra do nome
+
+print(f'A última letra do seu nome é: {nome[:: -9]}')
+# Usa o fatiamento de strings para localizar a ultima letra do nome
+else:
+print('Nada foi digitado, por favor, digite uma entrada válida! ')
+# Caso nada for digitado, apresenta a mensagem de erro acima
